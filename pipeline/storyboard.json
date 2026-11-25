@@ -19,22 +19,19 @@
     {
       "id": "mother",
       "name": "The Mother",
-      "description": "Ethiopian woman, approximately 42 years old in the childhood scenes and approximately 64 in the final scene. Warm, expressive face, gentle but determined eyes, natural facial features, modest everyday Ethiopian clothing and a neatly draped neutral-colored headscarf. She has a calm, hardworking personality and expresses affection through practical actions, gentle gestures and reassuring smiles. Her appearance must remain recognizably the same across both age stages.",
-      "reference_images": {
-        "childhood": "outputs/refs/mother_young.png",
-        "adulthood": "outputs/refs/mother_older.png"
-      }
+      "description": "Ethiopian woman, 42 years old. Round face, high cheekbones, warm medium-brown skin, deep brown eyes, full lips. Wearing a simple neutral-colored headscarf and modest clothing.",
+      "reference_image": "outputs/refs/mother.png"
     },
     {
       "id": "child",
-      "name": "The Daughter (Young Narrator)",
-      "description": "Ethiopian girl approximately 7 years old. Bright, curious eyes, natural Ethiopian facial features, medium-brown skin, small neat braids or tied-back hair, wearing simple age-appropriate everyday clothing. She is imaginative, curious and determined. Her eyes and facial structure must clearly resemble the adult narrator.",
+      "name": "The Daughter (Young)",
+      "description": "Ethiopian girl, 7 years old. High round forehead, large curious dark brown eyes, medium-brown skin, small afro puffs tied back. Wearing a simple orange cotton dress.",
       "reference_image": "outputs/refs/daughter_child.png"
     },
     {
       "id": "adult",
-      "name": "The Adult Daughter (Narrator)",
-      "description": "Ethiopian woman in her late twenties, approximately 29 years old. She must visibly resemble the childhood girl through matching eye shape, facial proportions, skin tone and recognizable features. She wears modest contemporary professional clothing and works as an aspiring architect or architectural designer. Intelligent, ambitious, reflective and emotionally expressive without exaggerated facial reactions.",
+      "name": "The Adult Daughter",
+      "description": "Ethiopian woman, 29 years old. Oval face, high cheekbones, medium-brown skin, large dark brown eyes, short natural curly hair. Wearing a modern white or cream professional blouse.",
       "reference_image": "outputs/refs/daughter_adult.png"
     }
   ],
@@ -55,7 +52,7 @@
       "duration_s": 5,
       "shot_type": "extreme_close_up_to_medium",
       "camera": "slow_pull_back",
-      "image_prompt": "An Ethiopian woman in her late twenties sits alone at a professional architectural design desk late at night. A carefully constructed miniature architectural model has partially collapsed in front of her. Tiny cardboard structures and pieces are scattered across the wooden surface. She stares at the failed model, visibly exhausted and disappointed. Only one warm desk lamp illuminates her face and the damaged model. Cinematic painterly realism, intimate framing, dramatic shadows, sophisticated composition, natural expression.",
+      "image_prompt": "An Ethiopian woman in her late twenties sits alone at a professional architectural design desk late at night. She looks down at a partially collapsed miniature architectural model, her face full of disappointment. No eye contact. Tiny cardboard structures are scattered across the wooden surface. Only one warm desk lamp illuminates her face and the damaged model. Cinematic painterly realism, dramatic shadows.",
       "motion_prompt": "A small piece of the collapsed model settles on the desk. The woman slowly lowers her head and exhales. The camera gradually pulls back to reveal the isolated workspace.",
       "narration": "አንዳንድ ሕልሞች በአንድ ሰው እጅ ብቻ አይገነቡም።",
       "narration_en": "Some dreams are not built by one pair of hands alone.",
@@ -90,7 +87,7 @@
       "duration_s": 6,
       "shot_type": "over_the_shoulder_to_close_up",
       "camera": "slow_push_in",
-      "image_prompt": "A seven-year-old Ethiopian girl sits at a modest wooden table in her family home, drawing a beautiful imaginary house in an old school exercise book. She uses an ordinary wooden pencil and is completely absorbed in her drawing. Her eyes brighten as she imagines the finished house. Soft morning sunlight enters through a nearby window. Authentic Ethiopian home interior, natural textures, intimate cinematic framing, hand-painted realism.",
+      "image_prompt": "A seven-year-old Ethiopian girl sits at a modest wooden table in her family home. She is looking down at an old school exercise book, completely absorbed in drawing a house with a wooden pencil. Profile view, no eye contact with camera. Soft morning sunlight enters through a nearby window. Authentic Ethiopian home interior, intimate cinematic framing.",
       "motion_prompt": "The girl moves her pencil across the page, pauses and looks at her drawing with a small excited smile. The camera slowly moves closer to reveal her imaginative expression.",
       "narration": "ትንሽ ሳለሁ ቤቶችን መሳል እወድ ነበር።",
       "narration_en": "When I was little, I loved drawing houses.",
@@ -107,7 +104,7 @@
       "duration_s": 7,
       "shot_type": "medium_two_shot_with_inserts",
       "camera": "slow_lateral_tracking",
-      "image_prompt": "An Ethiopian mother in her early forties joins her seven-year-old daughter at a wooden table. The mother brings pieces of recycled cardboard from an old box, a ruler and simple craft materials. She sits beside the girl and holds a piece of cardboard steady while the little girl constructs a miniature house. The mother watches her daughter with a genuine encouraging smile. Modest authentic Ethiopian family home, natural modest clothing, warm sunlight, beautifully detailed hands, intimate cinematic composition.",
+      "image_prompt": "Medium two-shot. Ethiopian woman, 42 years old, round face, medium-brown skin, neutral headscarf. She sits beside an Ethiopian girl, 7 years old, large brown eyes, small afro puffs, orange dress. They are building a cardboard house. The mother holds a piece of cardboard steady. The girl places a piece carefully. No pencils in hands. Soft morning light, intimate cinematic framing.",
       "motion_prompt": "The mother gently holds the cardboard while the girl carefully positions another piece. Their hands work together naturally. The mother gives her daughter a reassuring smile. Gentle camera movement across their hands.",
       "narration": "የምፈልገውን ሁሉ ልትሰጠኝ አትችልም ነበር፤ ያላትን ግን ታካፍለኝ ነበር።",
       "narration_en": "She couldn't give me everything I wished for, but she shared what she had.",
@@ -125,7 +122,7 @@
       "duration_s": 6,
       "shot_type": "close_up_to_medium_close_up",
       "camera": "gentle_push_in",
-      "image_prompt": "The little Ethiopian girl's miniature cardboard house has fallen apart on the wooden table. She looks disappointed and holds her pencil loosely, uncertain whether to continue. Her mother sits beside her, gently picks up the pencil and places it back into her daughter's hand. The mother's expression is warm, confident and encouraging. The daughter looks up at her. Emotionally authentic Ethiopian mother-daughter interaction, realistic hands, intimate cinematic lighting, restrained expressions.",
+      "image_prompt": "Close-up. Ethiopian woman, 42 years old, round face, medium-brown skin. She gently places a wooden pencil into the hand of a 7-year-old girl with small afro puffs. The girl's hand is open, receiving the pencil. Anatomically correct hands, five fingers each. Warm lighting, emotional.",
       "motion_prompt": "The mother gently returns the pencil to the girl's hand, then gives her an encouraging smile. The girl slowly closes her fingers around the pencil and looks back at the model.",
       "narration": "ተስፋ እንዳልቆርጥ ታበረታታኝ ነበር።",
       "narration_en": "She always encouraged me not to give up.",
@@ -148,7 +145,7 @@
       "duration_s": 6,
       "shot_type": "cinematic_detail_montage",
       "camera": "controlled_tracking",
-      "image_prompt": "Early morning inside the same modest Ethiopian family home. The mother carefully prepares her daughter's school bag, places a packed lunch inside, sharpens a wooden pencil and gently straightens her little girl's school clothes. The girl stands nearby getting ready for school. Warm morning light, lived-in domestic details, authentic Ethiopian family environment, cinematic painterly realism, natural expressions and detailed hands.",
+      "image_prompt": "Medium shot. Ethiopian woman, 42 years old, round face, medium-brown skin, neutral headscarf. She stands by a wooden table packing a small school bag. She is placing a wrapped sandwich and an apple into the bag. A 7-year-old girl with small afro puffs in an orange dress stands nearby watching. No pencils in hands. Warm morning light.",
       "motion_prompt": "A sequence of small natural gestures: the mother places the lunch inside the bag, sharpens a pencil and straightens the girl's collar. The girl turns back and smiles at her mother before leaving.",
       "narration": "በትንሽ ትንሽ ነገሮች ፍቅሯን ታሳየኝ ነበር።",
       "narration_en": "Through little everyday things, she showed me how much she cared.",
@@ -166,7 +163,7 @@
       "duration_s": 6,
       "shot_type": "match_cut",
       "camera": "static_matched_composition",
-      "image_prompt": "A cinematic visual transition: a young Ethiopian girl's hand holding a wooden pencil and drawing a house in a school exercise book gradually matches the composition of an adult Ethiopian woman's hand holding a similar pencil and drawing an architectural blueprint at a professional design desk. Preserve the exact visual relationship between the two hands and drawing movements. Beautiful natural transition, sophisticated cinematic storytelling, painterly realism.",
+      "image_prompt": "Close-up, macro shot. A single Ethiopian woman's hand (29 years old, medium-brown skin) holding a wooden pencil, drawing a precise architectural blueprint on white paper. Professional drafting table, warm desk lamp light. No split screen, single continuous frame.",
       "motion_prompt": "The little girl's pencil draws a line across the paper. Through a precisely matched transition, the same movement continues as an adult woman's pencil draws a line across an architectural blueprint.",
       "narration": "ዓመታት አለፉ፤ እኔም አደግሁ።",
       "narration_en": "Years passed, and I grew up.",
@@ -242,7 +239,7 @@
       "duration_s": 8,
       "shot_type": "medium_to_intimate_close_up",
       "camera": "slow_dolly_in",
-      "image_prompt": "At a sophisticated architectural exhibition in Ethiopia, the adult Ethiopian woman proudly displays a beautifully completed architectural model. Her approximately 64-year-old mother approaches the display. The older mother has the same recognizable facial identity as the younger mother, now with natural age lines and mature features. She slowly looks at the model, gently touches its small structure and then looks at her daughter with immense pride. The daughter places her hand over her mother's hand. They exchange a quiet emotional smile. Warm elegant exhibition lighting, refined architectural background, cinematic painterly realism, genuine human emotion, beautifully composed intimate framing.",
+      "image_prompt": "Medium shot. An Ethiopian woman, 29 years old, oval face, short curly hair, white blouse stands next to an older Ethiopian woman, 64 years old, round face, medium-brown skin, deep brown eyes, wearing a neutral headscarf. They are looking at an architectural model together. The older woman touches the model. The younger woman places her hand on the older woman's hand. Warm lighting, emotional.",
       "motion_prompt": "The mother approaches the model and gently touches its surface. The daughter moves beside her and places her hand over her mother's. They exchange a meaningful look. The camera slowly pushes in on their joined hands and then their faces. No exaggerated crying.",
       "narration": "ያኔ ተረዳሁ፤ ይህ ሕልም የእኔ ብቻ አልነበረም። እናቴም ከእኔ ጋር ገንብታዋለች።",
       "narration_en": "Then I understood. This dream was never mine alone. My mother had helped build it with me.",
