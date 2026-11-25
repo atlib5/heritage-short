@@ -1,0 +1,278 @@
+
+{
+  "meta": {
+    "title": "እጆቿ የገነቡት ሕልም",
+    "title_en": "The Dream Her Hands Helped Build",
+    "language": "am",
+    "audience": "Ethiopian youth, young women pursuing ambitious dreams, and mothers whose sacrifices and encouragement help their children build meaningful futures. Anyone who has experienced the quiet support of a parent.",
+    "intent": "The audience should realize that behind many achievements is someone who believed in us before the world did. The film should communicate a mother's love through everyday actions, practical support, encouragement, sacrifice, and the confidence she builds in her daughter. The audience should feel deeply moved and inspired to appreciate their mothers.",
+    "aspect_ratios": [
+      "9:16",
+      "16:9"
+    ],
+    "total_duration_s": 72
+  },
+
+  "style_block": "Cinematic painterly realism with subtle hand-painted texture and sophisticated visual storytelling. Authentic Ethiopian environments, natural Ethiopian facial features, believable domestic settings, warm amber and muted earth tones, ochre, cream and deep brown. Childhood scenes feature soft morning sunlight and intimate warm interiors. Adult scenes feature cinematic contrast, restrained cooler shadows and warm practical lighting. Professional film cinematography, expressive close-ups, carefully composed wide shots, shallow depth of field, realistic skin texture, detailed fabric, natural facial expressions and controlled camera movement. Every character must retain consistent facial identity, proportions, skin tone, hairstyle and clothing across scenes. The emotional direction must be sincere, restrained and deeply human, never melodramatic. No prayer scenes, religious symbols, religious objects or religious messaging. Avoid generic stock-photo aesthetics, exaggerated smiles, artificial golden glow, cartoon-like characters, distorted hands, changing facial identities, inconsistent clothing, watermarks and generated text.",
+
+  "characters": [
+    {
+      "id": "mother",
+      "name": "The Mother",
+      "description": "Ethiopian woman, approximately 42 years old in the childhood scenes and approximately 64 in the final scene. Warm, expressive face, gentle but determined eyes, natural facial features, modest everyday Ethiopian clothing and a neatly draped neutral-colored headscarf. She has a calm, hardworking personality and expresses affection through practical actions, gentle gestures and reassuring smiles. Her appearance must remain recognizably the same across both age stages.",
+      "reference_images": {
+        "childhood": "outputs/refs/mother_young.png",
+        "adulthood": "outputs/refs/mother_older.png"
+      }
+    },
+    {
+      "id": "child",
+      "name": "The Daughter (Young Narrator)",
+      "description": "Ethiopian girl approximately 7 years old. Bright, curious eyes, natural Ethiopian facial features, medium-brown skin, small neat braids or tied-back hair, wearing simple age-appropriate everyday clothing. She is imaginative, curious and determined. Her eyes and facial structure must clearly resemble the adult narrator.",
+      "reference_image": "outputs/refs/daughter_child.png"
+    },
+    {
+      "id": "adult",
+      "name": "The Adult Daughter (Narrator)",
+      "description": "Ethiopian woman in her late twenties, approximately 29 years old. She must visibly resemble the childhood girl through matching eye shape, facial proportions, skin tone and recognizable features. She wears modest contemporary professional clothing and works as an aspiring architect or architectural designer. Intelligent, ambitious, reflective and emotionally expressive without exaggerated facial reactions.",
+      "reference_image": "outputs/refs/daughter_adult.png"
+    }
+  ],
+
+  "continuity_rules": {
+    "character_consistency": "Use the supplied reference images for every relevant generation. The adult daughter must visibly resemble the seven-year-old girl. The older mother must retain the facial identity of the younger mother.",
+    "age_progression": "The mother is approximately 42 when the daughter is 7 and approximately 64 when the daughter is 29.",
+    "visual_motif": "An old wooden pencil connects the daughter's childhood ambition to her adult professional journey. The mother's hands represent the practical support that helped build her confidence.",
+    "environment_consistency": "Childhood scenes use the same modest Ethiopian family home. Adult scenes use a believable professional architectural design workspace and exhibition environment.",
+    "text_generation": "Do not generate readable text inside books, drawings, phone screens, architectural plans or end cards. Add required text during post-production.",
+    "motion_control": "Use subtle, physically believable movements. Each shot should have one dominant movement rather than several simultaneous complex actions.",
+    "format_adaptation": "Compose important subjects within a protected central area for both 9:16 and 16:9. Generate separate compositions when reframing would damage important storytelling elements."
+  },
+
+  "shots": [
+    {
+      "id": "shot_01",
+      "duration_s": 5,
+      "shot_type": "extreme_close_up_to_medium",
+      "camera": "slow_pull_back",
+      "image_prompt": "An Ethiopian woman in her late twenties sits alone at a professional architectural design desk late at night. A carefully constructed miniature architectural model has partially collapsed in front of her. Tiny cardboard structures and pieces are scattered across the wooden surface. She stares at the failed model, visibly exhausted and disappointed. Only one warm desk lamp illuminates her face and the damaged model. Cinematic painterly realism, intimate framing, dramatic shadows, sophisticated composition, natural expression.",
+      "motion_prompt": "A small piece of the collapsed model settles on the desk. The woman slowly lowers her head and exhales. The camera gradually pulls back to reveal the isolated workspace.",
+      "narration": "አንዳንድ ሕልሞች በአንድ ሰው እጅ ብቻ አይገነቡም።",
+      "narration_en": "Some dreams are not built by one pair of hands alone.",
+      "music_cue": "Opening: a single emotional piano note, restrained ambient atmosphere, subtle room tone.",
+      "characters": [
+        "adult"
+      ],
+      "transition_out": "The woman's hand reaches for an old pencil. Match cut into the childhood scene.",
+      "reason": "Begins with a moment of failure rather than introducing the story conventionally. Creates curiosity and establishes the central visual motif of hands and building."
+    },
+
+    {
+      "id": "shot_02",
+      "duration_s": 5,
+      "shot_type": "extreme_close_up",
+      "camera": "macro_tracking",
+      "image_prompt": "An old, slightly worn wooden pencil resting on a wooden desk beside an unfinished architectural model. A woman's hand gently picks it up. Warm light falls across the pencil, revealing its worn wooden surface. Cinematic macro photography, shallow depth of field, delicate film grain, painterly realism.",
+      "motion_prompt": "The pencil rolls gently across the desk before the woman's fingers stop it. Transition through a precisely matched camera movement into the same pencil in a little girl's hand years earlier.",
+      "narration": "የእኔ ሕልም ግን ከእናቴ ጋር ተጀመረ።",
+      "narration_en": "But my dream began with my mother.",
+      "music_cue": "A gentle nostalgic piano melody begins, accompanied by soft strings.",
+      "characters": [
+        "adult",
+        "child"
+      ],
+      "transition_out": "Match cut from the adult's hand holding the pencil to the little girl's hand holding the same pencil.",
+      "reason": "Connects adulthood to childhood through a physical object, creating an elegant cinematic transition rather than using an ordinary flashback."
+    },
+
+    {
+      "id": "shot_03",
+      "duration_s": 6,
+      "shot_type": "over_the_shoulder_to_close_up",
+      "camera": "slow_push_in",
+      "image_prompt": "A seven-year-old Ethiopian girl sits at a modest wooden table in her family home, drawing a beautiful imaginary house in an old school exercise book. She uses an ordinary wooden pencil and is completely absorbed in her drawing. Her eyes brighten as she imagines the finished house. Soft morning sunlight enters through a nearby window. Authentic Ethiopian home interior, natural textures, intimate cinematic framing, hand-painted realism.",
+      "motion_prompt": "The girl moves her pencil across the page, pauses and looks at her drawing with a small excited smile. The camera slowly moves closer to reveal her imaginative expression.",
+      "narration": "ትንሽ ሳለሁ ቤቶችን መሳል እወድ ነበር።",
+      "narration_en": "When I was little, I loved drawing houses.",
+      "music_cue": "Warm nostalgic piano, subtle acoustic textures, gentle atmosphere of childhood.",
+      "characters": [
+        "child"
+      ],
+      "transition_out": "The mother's shadow gently falls across the drawing before she enters the composition.",
+      "reason": "Introduces the childhood ambition and establishes the daughter's relationship with drawing and architecture."
+    },
+
+    {
+      "id": "shot_04",
+      "duration_s": 7,
+      "shot_type": "medium_two_shot_with_inserts",
+      "camera": "slow_lateral_tracking",
+      "image_prompt": "An Ethiopian mother in her early forties joins her seven-year-old daughter at a wooden table. The mother brings pieces of recycled cardboard from an old box, a ruler and simple craft materials. She sits beside the girl and holds a piece of cardboard steady while the little girl constructs a miniature house. The mother watches her daughter with a genuine encouraging smile. Modest authentic Ethiopian family home, natural modest clothing, warm sunlight, beautifully detailed hands, intimate cinematic composition.",
+      "motion_prompt": "The mother gently holds the cardboard while the girl carefully positions another piece. Their hands work together naturally. The mother gives her daughter a reassuring smile. Gentle camera movement across their hands.",
+      "narration": "የምፈልገውን ሁሉ ልትሰጠኝ አትችልም ነበር፤ ያላትን ግን ታካፍለኝ ነበር።",
+      "narration_en": "She couldn't give me everything I wished for, but she shared what she had.",
+      "music_cue": "Warm piano with delicate strings. Music gently grows in emotional warmth.",
+      "characters": [
+        "mother",
+        "child"
+      ],
+      "transition_out": "Close-up of the miniature cardboard house before cutting to its collapse.",
+      "reason": "Shows practical maternal support rather than relying on generic symbolic imagery. The mother helps her daughter create something with the resources available to them."
+    },
+
+    {
+      "id": "shot_05",
+      "duration_s": 6,
+      "shot_type": "close_up_to_medium_close_up",
+      "camera": "gentle_push_in",
+      "image_prompt": "The little Ethiopian girl's miniature cardboard house has fallen apart on the wooden table. She looks disappointed and holds her pencil loosely, uncertain whether to continue. Her mother sits beside her, gently picks up the pencil and places it back into her daughter's hand. The mother's expression is warm, confident and encouraging. The daughter looks up at her. Emotionally authentic Ethiopian mother-daughter interaction, realistic hands, intimate cinematic lighting, restrained expressions.",
+      "motion_prompt": "The mother gently returns the pencil to the girl's hand, then gives her an encouraging smile. The girl slowly closes her fingers around the pencil and looks back at the model.",
+      "narration": "ተስፋ እንዳልቆርጥ ታበረታታኝ ነበር።",
+      "narration_en": "She always encouraged me not to give up.",
+      "dialogue": {
+        "speaker": "mother",
+        "text_am": "አትተዪው ልጄ። እንደገና ሞክሪ።",
+        "text_en": "Don't give up on it, my daughter. Try again."
+      },
+      "music_cue": "Music temporarily softens so the mother's dialogue is clearly heard. A gentle hopeful piano note follows.",
+      "characters": [
+        "mother",
+        "child"
+      ],
+      "transition_out": "The girl begins drawing again. Cut to the mother's everyday preparations for school.",
+      "reason": "A defining emotional moment. The mother does not solve the problem for her daughter; she gives her the confidence to try again."
+    },
+
+    {
+      "id": "shot_06",
+      "duration_s": 6,
+      "shot_type": "cinematic_detail_montage",
+      "camera": "controlled_tracking",
+      "image_prompt": "Early morning inside the same modest Ethiopian family home. The mother carefully prepares her daughter's school bag, places a packed lunch inside, sharpens a wooden pencil and gently straightens her little girl's school clothes. The girl stands nearby getting ready for school. Warm morning light, lived-in domestic details, authentic Ethiopian family environment, cinematic painterly realism, natural expressions and detailed hands.",
+      "motion_prompt": "A sequence of small natural gestures: the mother places the lunch inside the bag, sharpens a pencil and straightens the girl's collar. The girl turns back and smiles at her mother before leaving.",
+      "narration": "በትንሽ ትንሽ ነገሮች ፍቅሯን ታሳየኝ ነበር።",
+      "narration_en": "Through little everyday things, she showed me how much she cared.",
+      "music_cue": "Gentle strings and piano, creating a feeling of warmth, home and childhood memories.",
+      "characters": [
+        "mother",
+        "child"
+      ],
+      "transition_out": "The daughter picks up her school bag. Cut to a time transition.",
+      "reason": "Demonstrates that love is often expressed through ordinary sacrifices and consistent actions rather than expensive gifts or dramatic speeches."
+    },
+
+    {
+      "id": "shot_07",
+      "duration_s": 6,
+      "shot_type": "match_cut",
+      "camera": "static_matched_composition",
+      "image_prompt": "A cinematic visual transition: a young Ethiopian girl's hand holding a wooden pencil and drawing a house in a school exercise book gradually matches the composition of an adult Ethiopian woman's hand holding a similar pencil and drawing an architectural blueprint at a professional design desk. Preserve the exact visual relationship between the two hands and drawing movements. Beautiful natural transition, sophisticated cinematic storytelling, painterly realism.",
+      "motion_prompt": "The little girl's pencil draws a line across the paper. Through a precisely matched transition, the same movement continues as an adult woman's pencil draws a line across an architectural blueprint.",
+      "narration": "ዓመታት አለፉ፤ እኔም አደግሁ።",
+      "narration_en": "Years passed, and I grew up.",
+      "music_cue": "Music gradually evolves from nostalgic piano into a more mature, cinematic orchestral texture.",
+      "characters": [
+        "child",
+        "adult"
+      ],
+      "transition_out": "The camera widens to reveal the adult daughter's professional design workspace.",
+      "reason": "A major visual storytelling moment. It communicates the passage of more than twenty years without relying on captions, narration-heavy explanation or multiple transitional scenes."
+    },
+
+    {
+      "id": "shot_08",
+      "duration_s": 7,
+      "shot_type": "medium_to_medium_close_up",
+      "camera": "slow_dolly_in",
+      "image_prompt": "An Ethiopian woman in her late twenties works alone in a small professional architectural design studio at night. She is surrounded by architectural sketches, an unfinished miniature building model, drafting materials and a laptop. She looks exhausted and frustrated after a difficult attempt. A warm desk lamp illuminates her face while the rest of the room remains in restrained cool shadows. Sophisticated cinematic composition, realistic professional environment, emotional painterly realism.",
+      "motion_prompt": "She studies the unfinished model, rubs her forehead and leans back in her chair. Her shoulders drop slightly as she exhales. The camera slowly moves closer, emphasizing her exhaustion.",
+      "narration": "መንገዱ ግን ቀላል አልነበረም። አንዳንድ ጊዜ ራሴን እጠራጠር ነበር።",
+      "narration_en": "But the journey wasn't easy. Sometimes, I doubted myself.",
+      "music_cue": "The musical arrangement becomes quieter and more tense. Subtle low piano notes and restrained ambient sound.",
+      "characters": [
+        "adult"
+      ],
+      "transition_out": "The woman's phone vibrates on the desk and catches her attention.",
+      "reason": "Establishes the emotional and professional struggles of adulthood. It creates a believable reason for her to remember her mother's encouragement."
+    },
+
+    {
+      "id": "shot_09",
+      "duration_s": 6,
+      "shot_type": "insert_to_medium_close_up",
+      "camera": "slow_push_in",
+      "image_prompt": "A smartphone rests on a wooden architectural design desk at night. An incoming voice message notification from the contact saved as 'Enat' appears on screen. Do not generate readable text. The screen illuminates the Ethiopian woman's face as she picks up the phone and listens. Her initially tired expression slowly softens. Beautiful reflections from the screen, warm desk lamp, shallow depth of field, cinematic painterly realism.",
+      "motion_prompt": "The phone vibrates gently. She picks it up, presses play and listens quietly. Her expression gradually becomes softer and more hopeful. The camera slowly moves toward her face.",
+      "narration": "ከእናቴ የድምፅ መልእክት ደረሰኝ።",
+      "narration_en": "I received a voice message from my mother.",
+      "dialogue": {
+        "speaker": "mother",
+        "delivery": "Gentle, affectionate, natural Ethiopian mother's voice with sincere encouragement.",
+        "text_am": "ልጄ፣ አትቸኩይ። በራስሽ እመኚ። የጀመርሽውን ጨርሺ።",
+        "text_en": "My daughter, don't rush. Believe in yourself. Finish what you started."
+      },
+      "music_cue": "Music drops almost completely during the mother's voice message. A soft piano melody returns afterward.",
+      "characters": [
+        "mother",
+        "adult"
+      ],
+      "transition_out": "The daughter lowers the phone, looks at the old pencil and reaches for her unfinished model.",
+      "reason": "Her mother's voice reconnects her to the confidence she developed during childhood. The voice message creates emotional continuity across their physical distance."
+    },
+
+    {
+      "id": "shot_10",
+      "duration_s": 6,
+      "shot_type": "cinematic_detail_montage",
+      "camera": "controlled_tracking_and_close_ups",
+      "image_prompt": "The adult Ethiopian woman returns to her architectural work with renewed determination. Close-up of her hand holding the old wooden pencil, carefully arranging architectural components and rebuilding her miniature building model. Her facial expression is focused and confident. Warm desk light, sophisticated cinematic photography, beautifully detailed architectural objects, natural hand movement and painterly realism.",
+      "motion_prompt": "She picks up a piece of the model, positions it carefully and continues working. Use two or three natural close-up movements rather than a complex animated sequence.",
+      "narration": "የእሷ ቃላት አበረቱኝ፤ እንደገና ሞከርኩ።",
+      "narration_en": "Her words gave me strength. I tried again.",
+      "music_cue": "Music begins a gradual emotional build with warm piano, strings and subtle orchestral depth.",
+      "characters": [
+        "adult"
+      ],
+      "transition_out": "A final architectural detail is placed into position. Cut to the completed model.",
+      "reason": "Shows the mother's influence producing a tangible result. The daughter does not succeed through magic; she gains the determination to continue."
+    },
+
+    {
+      "id": "shot_11",
+      "duration_s": 8,
+      "shot_type": "medium_to_intimate_close_up",
+      "camera": "slow_dolly_in",
+      "image_prompt": "At a sophisticated architectural exhibition in Ethiopia, the adult Ethiopian woman proudly displays a beautifully completed architectural model. Her approximately 64-year-old mother approaches the display. The older mother has the same recognizable facial identity as the younger mother, now with natural age lines and mature features. She slowly looks at the model, gently touches its small structure and then looks at her daughter with immense pride. The daughter places her hand over her mother's hand. They exchange a quiet emotional smile. Warm elegant exhibition lighting, refined architectural background, cinematic painterly realism, genuine human emotion, beautifully composed intimate framing.",
+      "motion_prompt": "The mother approaches the model and gently touches its surface. The daughter moves beside her and places her hand over her mother's. They exchange a meaningful look. The camera slowly pushes in on their joined hands and then their faces. No exaggerated crying.",
+      "narration": "ያኔ ተረዳሁ፤ ይህ ሕልም የእኔ ብቻ አልነበረም። እናቴም ከእኔ ጋር ገንብታዋለች።",
+      "narration_en": "Then I understood. This dream was never mine alone. My mother had helped build it with me.",
+      "music_cue": "Emotional climax: warm orchestral strings and piano reach their fullest point, remaining elegant and restrained.",
+      "characters": [
+        "mother",
+        "adult"
+      ],
+      "transition_out": "Hold briefly on their joined hands. Fade slowly to a warm dark background.",
+      "reason": "The emotional climax and payoff of the entire story. The mother's hands that once helped build a child's cardboard house now rest on the daughter's professional architectural work. The final image completes the visual metaphor."
+    },
+
+    {
+      "id": "shot_12",
+      "duration_s": 4,
+      "shot_type": "static_end_card",
+      "camera": "static",
+      "image_prompt": "A sophisticated minimalist cinematic end card with a deep warm brown background, subtle golden ambient light and delicate painterly texture. Elegant centered typography in clean cream lettering. A refined, premium editorial design. No people, no decorative religious symbols, no unnecessary graphics.",
+      "motion_prompt": "The title fades in gently, followed by the smaller AI disclosure. The final frame holds briefly before fading to black.",
+      "on_screen_text": {
+        "title_am": "እጆቿ የገነቡት ሕልም",
+        "title_en": "The Dream Her Hands Helped Build",
+        "disclosure_am": "ይህ ፊልም በAI እገዛ ተዘጋጅቷል።",
+        "disclosure_en": "This film was created with the assistance of AI."
+      },
+      "narration": "",
+      "narration_en": "",
+      "music_cue": "The final piano note gently fades into silence.",
+      "characters": [],
+      "reason": "A premium, restrained closing that allows the emotional message to remain with the audience. All typography must be created in post-production rather than generated inside the image model."
+    }
+  ]
+}

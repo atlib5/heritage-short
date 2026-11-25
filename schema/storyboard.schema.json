@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Heritage Short Storyboard",
+  "type": "object",
+  "required": ["meta", "style_block", "characters", "continuity_rules", "shots"],
+  "additionalProperties": false,
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["title", "title_en", "language", "audience", "intent", "aspect_ratios", "total_duration_s"],
+      "additionalProperties": false,
+      "properties": {
+        "title": {"type": "string"},
+        "title_en": {"type": "string"},
+        "language": {"type": "string"},
+        "audience": {"type": "string"},
+        "intent": {"type": "string"},
+        "aspect_ratios": {
+          "type": "array",
+          "items": {"enum": ["9:16", "16:9"]}
+        },
+        "total_duration_s": {"type": "number", "minimum": 60, "maximum": 90}
+      }
+    },
+    "style_block": {
+      "type": "string",
+      "minLength": 30
+    },
+    "continuity_rules": {
+      "type": "object",
+      "additionalProperties": {"type": "string"}
+    },
+    "characters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "description"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string"},
+          "name": {"type": "string"},
+          "description": {"type": "string"},
+          "reference_image": {"type": "string"},
+          "reference_images": {
+            "type": "object",
+            "additionalProperties": {"type": "string"}
+          }
+        }
+      }
+    },
+    "shots": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "required": ["id", "duration_s", "shot_type", "camera", "image_prompt", "motion_prompt", "narration", "narration_en", "music_cue", "reason"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string"},
+          "duration_s": {"type": "number", "minimum": 3, "maximum": 15},
+          "shot_type": {"type": "string"},
+          "camera": {"type": "string"},
+          "image_prompt": {"type": "string", "minLength": 30},
+          "motion_prompt": {"type": "string"},
+          "narration": {"type": "string"},
+          "narration_en": {"type": "string"},
+          "music_cue": {"type": "string"},
+          "characters": {
+            "type": "array",
+            "items": {"type": "string"}
+          },
+          "transition_out": {"type": "string"},
+          "dialogue": {
+            "type": "object",
+            "properties": {
+              "speaker": {"type": "string"},
+              "text_am": {"type": "string"},
+              "text_en": {"type": "string"},
+              "delivery": {"type": "string"}
+            }
+          },
+          "on_screen_text": {
+            "type": "object",
+            "properties": {
+              "title_am": {"type": "string"},
+              "title_en": {"type": "string"},
+              "disclosure_am": {"type": "string"},
+              "disclosure_en": {"type": "string"}
+            }
+          },
+          "reason": {"type": "string"}
+        }
+      }
+    }
+  }
+}
