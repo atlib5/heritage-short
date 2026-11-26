@@ -1,4 +1,4 @@
-# The Dream Her Hands Helped Build (የእናቴ ጸሎት)
+# "እጆቿ የገነቡት ሕልም", The Dream Her Hands Helped Build
 
 A 68-second AI-generated short film about a mother's quiet support building her daughter's dreams. Narration in Amharic, with English subtitles.
 
