@@ -147,3 +147,11 @@ outages without burning the whole run.
 **Why:** `flux-2-dev` consumes significantly more neurons per image than `flux-1-schnell`. Iterating on prompts and generating 11 images multiple times burned through the daily free tier allowance.
 **Fix:** Pivoting to Kaggle (free GPU) for remaining generation and animation. The pipeline caches images, so the ones we already generated are safe. The quota resets at midnight UTC.
 **Lesson:** Free tiers are for prototyping, not production. Always track consumption in COSTS.md and build caching so quota resets don't lose work.
+
+# Failure Journal
+
+1. **FFmpeg Colon Path Error:** FFmpeg interpreted the `C:` drive letter as a filter parameter (`subtitles=C:\...`). Fixed by running FFmpeg via `cwd=OUT_DIR` and using relative paths.
+2. **Cloudflare 4006 Quota:** Ran out of 10,000 free neurons. Fixed by pivoting to Kaggle GPU generation.
+3. **Gemini 429 Rate Limit:** TTS hit quota limits after 6 requests. Fixed by adding exponential backoff (15s, 30s, 45s) and caching hashes.
+4. **Kaggle OOM Crash:** Loading full FLUX into 16GB VRAM crashed the kernel at 33%. Fixed by using `BitsAndBytesConfig(load_in_4bit=True)` and `enable_sequential_cpu_offload()`.
+5. **Missing Amharic Fonts:** Pillow generated empty boxes for Amharic text. Fixed by providing absolute Windows paths to `nyala.ttf`.
