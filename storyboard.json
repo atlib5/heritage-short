@@ -253,26 +253,8 @@
       ],
       "transition_out": "Hold briefly on their joined hands. Fade slowly to a warm dark background.",
       "reason": "The emotional climax and payoff of the entire story. The mother's hands that once helped build a child's cardboard house now rest on the daughter's professional architectural work. The final image completes the visual metaphor."
-    },
-
-    {
-      "id": "shot_12",
-      "duration_s": 4,
-      "shot_type": "static_end_card",
-      "camera": "static",
-      "image_prompt": "A sophisticated minimalist cinematic end card with a deep warm brown background, subtle golden ambient light and delicate painterly texture. Elegant centered typography in clean cream lettering. A refined, premium editorial design. No people, no decorative religious symbols, no unnecessary graphics.",
-      "motion_prompt": "The title fades in gently, followed by the smaller AI disclosure. The final frame holds briefly before fading to black.",
-      "on_screen_text": {
-        "title_am": "እጆቿ የገነቡት ሕልም",
-        "title_en": "The Dream Her Hands Helped Build",
-        "disclosure_am": "ይህ ፊልም በAI እገዛ ተዘጋጅቷል።",
-        "disclosure_en": "This film was created with the assistance of AI."
-      },
-      "narration": "",
-      "narration_en": "",
-      "music_cue": "The final piano note gently fades into silence.",
-      "characters": [],
-      "reason": "A premium, restrained closing that allows the emotional message to remain with the audience. All typography must be created in post-production rather than generated inside the image model."
     }
+
+    
   ]
 }
