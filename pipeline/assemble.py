@@ -80,11 +80,21 @@ ENC = ["-c:v", "libx264", "-preset", "veryfast", "-crf", "18",
        "-pix_fmt", "yuv420p", "-r", FPS, "-an"]
 
 
+def fit_blur(W, H):
+    """Whole picture visible (no cropping). Empty sides are filled with a blurred
+    copy of the same picture. If the aspect already matches, this is a plain scale."""
+    return (f"split[a][b];"
+            f"[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
+            f"boxblur=40:5[bg];"
+            f"[b]scale={W}:{H}:force_original_aspect_ratio=decrease[fg];"
+            f"[bg][fg]overlay=(W-w)/2:(H-h)/2,setsar=1")
+
+
 def make_clip(shot_id, dur, W, H, tmp):
     """Return a clip of EXACTLY `dur` seconds at WxH, FPS, h264 (all clips identical
     so the concat step can never break)."""
     out = tmp / f"{shot_id}_clip.mp4"
-    fit = f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H}"
+    fit = fit_blur(W, H)
     real = VIDEO_DIR / f"{shot_id}.mp4"
     img = IMG_DIR / f"{shot_id}.png"
 
@@ -95,7 +105,7 @@ def make_clip(shot_id, dur, W, H, tmp):
     elif img.exists():
         print(f"  {shot_id}: Ken Burns on keyframe")
         frames = int(round(dur * FPS))
-        vf = (f"scale={W*2}:{H*2}:force_original_aspect_ratio=increase,crop={W*2}:{H*2},"
+        vf = (f"{fit_blur(W*2, H*2)},"
               f"zoompan=z='1+0.12*on/{frames}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
               f":d=1:s={W}x{H}:fps={FPS}")
         run([FFMPEG, "-y", "-loop", "1", "-framerate", FPS, "-i", img,
